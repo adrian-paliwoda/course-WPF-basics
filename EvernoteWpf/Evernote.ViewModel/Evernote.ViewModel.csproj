@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <LangVersion>10</LangVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Evernote.Authentication\Evernote.Authentication.csproj"/>
+        <ProjectReference Include="..\Evernote.Db\Evernote.Db.csproj"/>
+        <ProjectReference Include="..\Evernote.Model\Evernote.Model.csproj"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <Reference Include="PresentationCore, Version=5.0.12.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+            <HintPath>..\..\..\..\..\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App\5.0.12\PresentationCore.dll</HintPath>
+        </Reference>
+    </ItemGroup>
+
+</Project>

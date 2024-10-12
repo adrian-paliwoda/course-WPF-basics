@@ -1,0 +1,29 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <Style TargetType="Entry" x:Key="EntryEmpty">
+        <Setter Property="BackgroundColor" Value="Transparent" />
+        <Setter Property="Margin" Value="5" />
+    </Style>
+    <Style TargetType="Entry" x:Key="EntryError" BasedOn="{StaticResource EntryEmpty}">
+        <Setter Property="BackgroundColor" Value="Brown" />
+    </Style>
+    <Style TargetType="Entry" x:Key="EntryValid" BasedOn="{StaticResource EntryEmpty}">
+        <Setter Property="BackgroundColor" Value="DarkGreen" />
+    </Style>
+
+    <Style TargetType="Label" x:Key="ErrorLabel">
+        <Setter Property="Margin" Value="5, 25, 5, 5" />
+        <Setter Property="TextColor" Value="DarkRed" />
+    </Style>
+
+    <Style TargetType="SearchBar" x:Key="SearchBarStyle" >
+        <Setter Property="Margin" Value="5, 20, 5, 5" />
+    </Style>
+    
+    <Style TargetType="Button" x:Key="ButtonGroupingStyle">
+        <Setter Property="Margin" Value="5, 10, 5, 5" />
+    </Style>
+    <Style TargetType="Button" x:Key="DangerButtonStyle" BasedOn="{StaticResource ButtonGroupingStyle}">
+        <Setter Property="BackgroundColor" Value="Red"></Setter>
+    </Style>
+</ResourceDictionary>

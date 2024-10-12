@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:contacts="using:Contacts"
+             x:Class="Contacts.DetailContactPage">
+    <ContentPage.Resources>
+        <ResourceDictionary Source="Resources/Styles/CustomStyles.xaml" />
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout Margin="10">
+            <Button Text="Turn Edit Mode ON" IsEnabled="True" Clicked="ModeButton_Click" />
+
+            <contacts:ContactView x:Name="ContactView"
+                                  Name="{Binding Name}"
+                                  Email="{Binding Email}"
+                                  Phone="{Binding Phone}"
+                                  IsEditModeEnabled="False"
+                                  />
+
+            <Button x:Name="UpdateButton" Text="Update" Clicked="Update_OnClicked" IsEnabled="False"
+                    Style="{StaticResource ButtonGroupingStyle}" />
+            <Button x:Name="RemoveButton" Text="Delete" Clicked="Delete_OnClicked" IsEnabled="False"
+                    Style="{StaticResource DangerButtonStyle}" />
+            <Label x:Name="ErrorMessage"/>
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

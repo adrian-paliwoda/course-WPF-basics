@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Contacts.MainPage">
+    <ContentPage.Resources>
+        <ResourceDictionary Source="Resources/Styles/CustomStyles.xaml" />
+    </ContentPage.Resources>
+
+    <StackLayout Margin="5">
+        <Button Text="Create new Contact" Clicked="Button_OnClicked" />
+
+        <SearchBar x:Name="SearchBar" Style="{StaticResource SearchBarStyle}" TextChanged="SearchBar_OnTextChanged" />
+        <ScrollView VerticalOptions="FillAndExpand" VerticalScrollBarVisibility="Always">
+            <CollectionView x:Name="ContactsView"
+                            ItemsLayout="VerticalList"
+                            ItemsSource="{Binding}"
+                            SelectionMode="Single">
+                <CollectionView.Style>
+                    <Style TargetType="CollectionView">
+                        <Setter Property="Margin" Value="20"></Setter>
+                    </Style>
+                </CollectionView.Style>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout Padding="10" Margin="0, 5,0,5">
+                            <StackLayout
+                                VerticalOptions="Center">
+                                <Label
+                                    Text="{Binding Name}"
+                                    FontAttributes="Bold" />
+                                <Label
+                                    Text="{Binding Email}"
+                                    FontAttributes="None" />
+                                <Label
+                                    Text="{Binding Phone}"
+                                    FontAttributes="Italic"
+                                    VerticalOptions="End" />
+                                <Button
+                                    Text="Show Contact" Clicked="Item_OnClicked" CommandParameter="{Binding Id}"
+                                    Style="{StaticResource ButtonGroupingStyle}" />
+                                <Button
+                                    Text="Remove Contact" Clicked="RemoveContact" CommandParameter="{Binding Id}"
+                                    Style="{StaticResource DangerButtonStyle}" />
+                            </StackLayout>
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </ScrollView>
+
+    </StackLayout>
+</ContentPage>

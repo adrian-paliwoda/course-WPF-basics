@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net5.0-windows</TargetFramework>
+        <UseWPF>true</UseWPF>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Evernote.ViewModel\Evernote.ViewModel.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.CognitiveServices.Speech" Version="1.19.0" />
+        <PackageReference Include="Microsoft.Xaml.Behaviors.Wpf" Version="1.1.39" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Icons" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Icons\note.png" />
+      <Resource Include="Icons\note.png" />
+      <None Remove="Icons\icon.ico" />
+      <Resource Include="Icons\icon.ico" />
+    </ItemGroup>
+
+</Project>

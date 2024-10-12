@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="UsingAPI_2024.MainPage">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+
+        <StackLayout Margin="10">
+            <Button Text="Select Image"
+                    HorizontalOptions="Center"
+                    Clicked="OnImageSelected" />
+            <Image x:Name="SelectedImage"
+                   Margin="0, 10, 0, 0" />
+        </StackLayout>
+
+        <ScrollView Grid.Column="0" VerticalOptions="FillAndExpand" VerticalScrollBarVisibility="Always">
+            <CollectionView x:Name="PredictionView"
+                            ItemsLayout="VerticalList"
+                            ItemsSource="{Binding}"
+                            SelectionMode="Single">
+                <CollectionView.Style>
+                    <Style TargetType="CollectionView">
+                        <Setter Property="Margin" Value="20" />
+                    </Style>
+                </CollectionView.Style>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout Padding="10" Margin="0, 5,0,5">
+                            <StackLayout
+                                VerticalOptions="Center">
+                                <Label
+                                    Text="{Binding Probability, StringFormat=P2}"
+                                    FontAttributes="Bold" />
+                                <Label
+                                    Text="{Binding Tag}"
+                                    FontAttributes="None" />
+                            </StackLayout>
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </ScrollView>
+    </Grid>
+
+
+</ContentPage>

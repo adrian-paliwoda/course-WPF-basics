@@ -1,0 +1,34 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <Color x:Key="NumbersColor">White</Color>
+    <Color x:Key="OperatorsColor">White</Color>
+
+    <Color x:Key="NumbersBackgroundColor">#444444</Color>
+    <Color x:Key="OperatorsBackgroundColor">Orange</Color>
+
+    <Color x:Key="ActionBackgroundColor">Purple</Color>
+    <Color x:Key="ActionColor">White</Color>
+
+    <Style TargetType="Button" x:Key="ButtonStyles">
+        <Setter Property="Margin" Value="5" />
+    </Style>
+
+    <Style x:Key="OperatorButtonColor" TargetType="Button" BasedOn="{StaticResource ButtonStyles}">
+        <Setter Property="BackgroundColor" Value="{StaticResource OperatorsBackgroundColor}" />
+        <Setter Property="TextColor" Value="{StaticResource OperatorsColor}" />
+    </Style>
+    <Style x:Key="NumberButtonColor" TargetType="Button" BasedOn="{StaticResource ButtonStyles}">
+        <Setter Property="BackgroundColor" Value="{StaticResource NumbersBackgroundColor}" />
+        <Setter Property="TextColor" Value="{StaticResource NumbersColor}" />
+    </Style>
+
+    <Style x:Key="ActionButtonColor" TargetType="Button" BasedOn="{StaticResource ButtonStyles}">
+        <Setter Property="BackgroundColor" Value="{StaticResource ActionBackgroundColor}" />
+        <Setter Property="TextColor" Value="{StaticResource ActionColor}" />
+    </Style>
+
+    <Style TargetType="Label" x:Key="LabelStyle">
+        <Setter Property="FontSize" Value="70" />
+        <Setter Property="TextColor" Value="Firebrick" />
+    </Style>
+</ResourceDictionary>

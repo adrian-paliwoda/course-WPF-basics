@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EvernoteWpf", "EvernoteWpf\EvernoteWpf.csproj", "{5EFB2E5E-05D3-4712-90FE-5023C16F0A1C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Evernote.Model", "Evernote.Model\Evernote.Model.csproj", "{53F6DE9B-51E3-40B9-AD8F-B49A2B4C7484}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Evernote.Db", "Evernote.Db\Evernote.Db.csproj", "{DDE049FD-0394-4DD3-9C07-21F380F33239}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Evernote.ViewModel", "Evernote.ViewModel\Evernote.ViewModel.csproj", "{95379B39-9DF1-493D-B5BD-0230669FC0B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Evernote.Authentication", "Evernote.Authentication\Evernote.Authentication.csproj", "{9752CCDD-7565-4557-9EE7-7C5F3310CDC6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5EFB2E5E-05D3-4712-90FE-5023C16F0A1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EFB2E5E-05D3-4712-90FE-5023C16F0A1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EFB2E5E-05D3-4712-90FE-5023C16F0A1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EFB2E5E-05D3-4712-90FE-5023C16F0A1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53F6DE9B-51E3-40B9-AD8F-B49A2B4C7484}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53F6DE9B-51E3-40B9-AD8F-B49A2B4C7484}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53F6DE9B-51E3-40B9-AD8F-B49A2B4C7484}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53F6DE9B-51E3-40B9-AD8F-B49A2B4C7484}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDE049FD-0394-4DD3-9C07-21F380F33239}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDE049FD-0394-4DD3-9C07-21F380F33239}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDE049FD-0394-4DD3-9C07-21F380F33239}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDE049FD-0394-4DD3-9C07-21F380F33239}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95379B39-9DF1-493D-B5BD-0230669FC0B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95379B39-9DF1-493D-B5BD-0230669FC0B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95379B39-9DF1-493D-B5BD-0230669FC0B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95379B39-9DF1-493D-B5BD-0230669FC0B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9752CCDD-7565-4557-9EE7-7C5F3310CDC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9752CCDD-7565-4557-9EE7-7C5F3310CDC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9752CCDD-7565-4557-9EE7-7C5F3310CDC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9752CCDD-7565-4557-9EE7-7C5F3310CDC6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
