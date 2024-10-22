@@ -1,5 +1,5 @@
 # Genesis
-Code is based on "Windows Presentation Foundation Masterclass" course
+The code is based on "Windows Presentation Foundation Masterclass" course
 
 [About course](https://www.udemy.com/course/windows-presentation-foundation-masterclass/)
 
